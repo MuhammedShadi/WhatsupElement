@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/test" />
+    <ImageButton
+        android:id="@+id/_buttonCalls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_call_made_24"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="7dp"
+        android:icon="@drawable/ic_call"
+        android:title="@string/calls"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_alignParentEnd="false"
+        android:contentDescription="@string/calls" />
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_marginStart="90dp"
+        android:layout_marginBottom="45dp"
+        android:textColor="@color/black_54"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="@string/test" />
+    <TextView
+        android:id="@+id/titleTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="20dp"
+        android:text="Hello World!"
+        android:textColor="@color/base_color"
+        android:textSize="15sp"/>
+
+
+    <ImageButton
+        android:id="@+id/toolbar_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_call_24"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_marginStart="330dp"
+        android:layout_marginBottom="30dp"
+        android:icon="@drawable/ic_call"
+        android:title="@string/calls"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/calls" />
+</RelativeLayout>

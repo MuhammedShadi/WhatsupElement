@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="im.vector.app">
+
+    <application>
+        <activity android:name=".features.debug.TestLinkifyActivity" />
+        <activity android:name=".features.debug.sas.DebugSasEmojiActivity" />
+    </application>
+
+</manifest>

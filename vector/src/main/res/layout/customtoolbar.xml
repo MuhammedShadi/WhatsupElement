@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/customToolBar"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/riotx_accent"
+    app:popupTheme="@style/AppTheme">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <Button
+        android:drawableStart="@drawable/quantum_ic_arrow_back_white_24"
+        android:id="@+id/button_back1"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="@string/chats"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView1"
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/test" />
+
+    <TextView
+        android:id="@+id/titleTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:text="@string/test"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/whiteA_"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+    <Button
+        android:layout_marginStart="120dp"
+        android:drawableStart="@drawable/ic_baseline_videocam_28"
+        android:id="@+id/button_back2"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="@string/chats"/>
+    <Button
+        android:drawableStart="@drawable/ic_baseline_call_28"
+        android:id="@+id/button_back3"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="@string/chats"/>
+    <Button
+        android:drawableStart="@drawable/ic_baseline_more_vert_28"
+        android:id="@+id/button_back4"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:contentDescription="@string/chats"/>
+</LinearLayout>
+</androidx.appcompat.widget.Toolbar>

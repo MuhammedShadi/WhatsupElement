@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.StatusFragment">
+
+    <RelativeLayout android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/layout_other_status"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/thumbnail_status"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:padding="3dp"
+            android:src="@mipmap/ic_launcher"
+            tools:ignore="MissingClass" />
+
+        <com.devlomi.circularstatusview.CircularStatusView
+            android:id="@+id/circular_status_counts"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            app:portion_width="2dp"
+            app:portion_spacing="6dp"
+            tools:ignore="MissingClass" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/thumbnail_status"
+            android:orientation="vertical"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:paddingEnd="8dp"
+            android:paddingRight="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:text="@string/my_status"
+                android:id="@+id/username_status"
+                android:textColor="@android:color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/date_status"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:text="@string/tap_to_add_status_update" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:background="#F4F4F4"-->
+<!--        android:id="@+id/layout_recent_updates_status"-->
+<!--        android:padding="0dp">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/recent_updates"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:paddingStart="8dp"-->
+<!--            android:textColor="#6F6F6F"-->
+<!--            android:textStyle="bold"-->
+<!--            tools:ignore="RtlSymmetry" />-->
+
+<!--    </LinearLayout>-->
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="8dp"-->
+<!--        android:id="@+id/rv_recent_updates_status" />-->
+
+<!--    <LinearLayout-->
+<!--        android:visibility="visible"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="30dp"-->
+<!--        android:background="#F4F4F4"-->
+<!--        android:id="@+id/layout_viewed_updates_status"-->
+<!--        android:padding="0dp">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="@string/viewed_updates"-->
+<!--            android:layout_gravity="center_vertical"-->
+<!--            android:paddingStart="8dp"-->
+<!--            android:textColor="#6F6F6F"-->
+<!--            android:textStyle="bold"-->
+<!--            tools:ignore="RtlSymmetry" />-->
+
+<!--    </LinearLayout>-->
+
+<!--    <androidx.recyclerview.widget.RecyclerView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:padding="8dp"-->
+<!--        android:id="@+id/rv_viewed_updates_status" />-->
+</FrameLayout>
