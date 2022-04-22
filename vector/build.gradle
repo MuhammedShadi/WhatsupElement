@@ -443,7 +443,7 @@ dependencies {
     implementation 'com.github.3llomi:CircularStatusView:V1.0.2'
 
     // gplay flavor only
-    gplayImplementation('com.google.firebase:firebase-messaging:22.0.0') {
+    gplayImplementation('com.google.firebase:firebase-messaging:23.0.3') {
         exclude group: 'com.google.firebase', module: 'firebase-core'
         exclude group: 'com.google.firebase', module: 'firebase-analytics'
         exclude group: 'com.google.firebase', module: 'firebase-measurement-connector'
